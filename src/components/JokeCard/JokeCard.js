@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HomeCard(props) {
+function JokeCard(props) {
     return (
         <div className="card mx-auto" style={{ width: "18rem", margin: "50px" }}>
             <img src="..." className="card-img-top" alt="..." />
@@ -13,4 +13,4 @@ function HomeCard(props) {
     )
 }
 
-export default HomeCard;
+export default JokeCard;

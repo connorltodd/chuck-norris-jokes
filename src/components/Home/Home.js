@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeCard from './HomeCard/HomeCard';
+import JokeCard from '../JokeCard/JokeCard';
 
 // Chuck Norris Categories Endpoint 
 // https://api.chucknorris.io/jokes/categories
@@ -17,7 +17,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="container">
-                <HomeCard />
+                <JokeCard />
             </div>
         )
     }
