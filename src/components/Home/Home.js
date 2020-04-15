@@ -35,7 +35,14 @@ class Home extends React.Component {
                 <JokeCard  {...this.state.joke} />
                 {this.state.categories.map(category => {
                     return (
-                        <button key={category} onClick={() => this.getJoke(category)} >{category}</button>
+                        <button
+                            className="btn btn-success"
+                            key={category}
+                            onClick={() => this.getJoke(category)}
+                            style={{ width: '100px', margin: '10px' }}
+                        >
+                            {category}
+                        </button>
                     )
                 })}
             </div>
