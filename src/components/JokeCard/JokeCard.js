@@ -3,11 +3,10 @@ import React from 'react';
 function JokeCard(props) {
     return (
         <div className="card mx-auto" style={{ width: "18rem", margin: "50px" }}>
-            <img src="..." className="card-img-top" alt="..." />
+            <img src={props.icon_url} className="card-img-top" alt="..." style={{ height: "50px", width: "50px" }} />
             <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button className="btn btn-primary">Go somewhere</button>
+                <h5 className="card-title">{props.categories}</h5>
+                <p className="card-text">{props.value}</p>
             </div>
         </div>
     )
